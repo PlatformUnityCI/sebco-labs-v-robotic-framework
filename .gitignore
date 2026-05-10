@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.env
+
+# Reportes y Evidencias locales
+reports/
+assets/captures/
+assets/failures/
+site/
+
+# Calibración y Hardware (Datos específicos de tu setup)
+calibration_data.json
+*.log
+
+# IA & Temp
+.mcp/
+ai/temp_generation/
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store

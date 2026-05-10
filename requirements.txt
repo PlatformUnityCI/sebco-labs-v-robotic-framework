@@ -1,0 +1,10 @@
+# Dependencias
+
+pytest
+pytest-bdd
+opencv-python
+numpy
+pytesseract
+mkdocs
+mkdocs-material
+mkdocstrings[python]

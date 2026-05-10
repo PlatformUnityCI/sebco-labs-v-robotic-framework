@@ -1,0 +1,1 @@
+# Recortes de botones (ej: btn_login_uala.png)

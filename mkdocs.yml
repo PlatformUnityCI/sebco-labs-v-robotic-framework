@@ -1,0 +1,10 @@
+# Configuración de documentación
+
+site_name: Vision Robotic QA Framework
+theme:
+  name: material
+plugins:
+  - mkdocstrings
+nav:
+  - Home: index.md
+  - Architecture: README.md
