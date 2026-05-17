@@ -1,10 +1,3 @@
-Te explicaste perfecto.
-Lo que querés en realidad es un **prompt de lineamientos editoriales/técnicos** para generar documentación profesional, moderna y limpia, evitando el exceso de “épica enterprise”.
-
-Te dejo uno bastante sólido y reutilizable para cualquier proyecto:
-
----
-
 # Prompt — Estilo de documentación técnica profesional para proyectos de software
 
 Generá documentación técnica en formato Markdown (`.md`) con un estilo profesional, limpio y mantenible.
@@ -13,20 +6,20 @@ Generá documentación técnica en formato Markdown (`.md`) con un estilo profes
 
 La documentación debe sentirse:
 
-* técnica,
-* clara,
-* moderna,
-* seria,
-* fácil de escanear,
-* orientada a onboarding y mantenimiento real.
+- técnica,
+- clara,
+- moderna,
+- seria,
+- fácil de escanear,
+- orientada a onboarding y mantenimiento real.
 
 Evitar tono:
 
-* corporativo exagerado,
-* marketinero,
-* “tech manifesto”,
-* grandilocuente,
-* excesivamente dramático.
+- corporativo exagerado,
+- marketinero,
+- “tech manifesto”,
+- grandilocuente,
+- excesivamente dramático.
 
 La prioridad es:
 
@@ -43,31 +36,31 @@ La prioridad es:
 
 Usar un tono:
 
-* técnico,
-* directo,
-* profesional,
-* sobrio.
+- técnico,
+- directo,
+- profesional,
+- sobrio.
 
 Evitar:
 
-* adjetivos exagerados,
-* épica innecesaria,
-* frases absolutas,
-* lenguaje inflado.
+- adjetivos exagerados,
+- épica innecesaria,
+- frases absolutas,
+- lenguaje inflado.
 
 NO usar frases como:
 
-* “blindaje absoluto”
-* “sanitización quirúrgica”
-* “garantía matemática”
-* “infraestructura enterprise”
-* “core operacional crítico”
+- “blindaje absoluto”
+- “sanitización quirúrgica”
+- “garantía matemática”
+- “infraestructura enterprise”
+- “core operacional crítico”
 
 Preferir:
 
-* explicaciones concretas,
-* precisión técnica,
-* lenguaje neutral.
+- explicaciones concretas,
+- precisión técnica,
+- lenguaje neutral.
 
 ---
 
@@ -77,22 +70,24 @@ Organizar el `.md` en secciones claras usando:
 
 ```md
 # Título principal
+
 ## Sección
+
 ### Subsección
 ```
 
 Mantener:
 
-* separación visual,
-* bloques cortos,
-* listas simples,
-* párrafos breves.
+- separación visual,
+- bloques cortos,
+- listas simples,
+- párrafos breves.
 
 Cada sección debe tener:
 
-* propósito claro,
-* explicación breve,
-* comandos o ejemplos concretos.
+- propósito claro,
+- explicación breve,
+- comandos o ejemplos concretos.
 
 ---
 
@@ -100,16 +95,16 @@ Cada sección debe tener:
 
 Usar:
 
-* bloques de código bien separados,
-* listas con bullets,
-* tablas solo si realmente ayudan,
-* divisores `---` entre secciones importantes.
+- bloques de código bien separados,
+- listas con bullets,
+- tablas solo si realmente ayudan,
+- divisores `---` entre secciones importantes.
 
 Evitar:
 
-* paredes enormes de texto,
-* párrafos demasiado largos,
-* narrativa innecesaria.
+- paredes enormes de texto,
+- párrafos demasiado largos,
+- narrativa innecesaria.
 
 ---
 
@@ -117,10 +112,10 @@ Evitar:
 
 Todos los comandos deben:
 
-* ser reales,
-* ejecutables,
-* minimalistas,
-* estar contextualizados.
+- ser reales,
+- ejecutables,
+- minimalistas,
+- estar contextualizados.
 
 Ejemplo correcto:
 
@@ -130,8 +125,8 @@ pip install pip-tools
 
 Explicar brevemente:
 
-* qué hace,
-* por qué se usa.
+- qué hace,
+- por qué se usa.
 
 No sobreexplicar cosas obvias.
 
@@ -141,17 +136,17 @@ No sobreexplicar cosas obvias.
 
 Explicar:
 
-* el “por qué” de una decisión,
-* riesgos reales,
-* beneficios concretos.
+- el “por qué” de una decisión,
+- riesgos reales,
+- beneficios concretos.
 
 Evitar exageraciones técnicas.
 
 Ejemplo:
 
-* NO decir:
+- NO decir:
   “seguridad absoluta de supply chain”
-* SÍ decir:
+- SÍ decir:
   “mejora reproducibilidad y validación de integridad”
 
 ---
@@ -160,9 +155,9 @@ Ejemplo:
 
 Cuando describas librerías o herramientas:
 
-* explicar función real,
-* justificar brevemente por qué fueron elegidas,
-* evitar marketing técnico.
+- explicar función real,
+- justificar brevemente por qué fueron elegidas,
+- evitar marketing técnico.
 
 Formato recomendado:
 
@@ -172,15 +167,15 @@ Framework principal de testing.
 
 Se utiliza para:
 
-* ejecutar pruebas automatizadas,
-* organizar suites de testing,
-* integrar fixtures.
+- ejecutar pruebas automatizadas,
+- organizar suites de testing,
+- integrar fixtures.
 
 Fue elegido por:
 
-* simplicidad,
-* ecosistema,
-* compatibilidad con automatización.
+- simplicidad,
+- ecosistema,
+- compatibilidad con automatización.
 
 ---
 
@@ -198,9 +193,9 @@ Ejemplo recomendado:
 
 Reglas:
 
-* usar bordó/fucsia oscuro para warnings o compatibilidad,
-* evitar colores saturados en exceso,
-* no abusar de highlights visuales.
+- usar bordó/fucsia oscuro para warnings o compatibilidad,
+- evitar colores saturados en exceso,
+- no abusar de highlights visuales.
 
 ---
 
@@ -208,16 +203,16 @@ Reglas:
 
 La documentación debe sentirse:
 
-* escrita por un engineer senior,
-* mantenida para un equipo real,
-* útil dentro de un repositorio vivo.
+- escrita por un engineer senior,
+- mantenida para un equipo real,
+- útil dentro de un repositorio vivo.
 
 Debe priorizar:
 
-* claridad operativa,
-* velocidad de lectura,
-* mantenimiento futuro,
-* onboarding técnico.
+- claridad operativa,
+- velocidad de lectura,
+- mantenimiento futuro,
+- onboarding técnico.
 
 No escribir para impresionar.
 Escribir para que otro engineer pueda trabajar rápido y entender el sistema sin fricción.
