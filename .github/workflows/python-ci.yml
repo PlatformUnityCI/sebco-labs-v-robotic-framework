@@ -1,0 +1,38 @@
+name: Python CI - Dependencias y Seguridad
+
+on:
+  push:
+    branches: [ main, robotic-framework ]
+  pull_request:
+    branches: [ main, robotic-framework ]
+
+jobs:
+  audit-and-test:
+    # Usamos ubuntu-latest en CI por eficiencia de costos/tiempo, 
+    # pero el entorno de ejecución emula el aislamiento localmente.
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar el repositorio
+      uses: actions/checkout@v4
+
+    - name: Configurar Python 3.14
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.14-dev' # O la versión estable para el pipeline
+        cache: 'pip'               # Cachea las dependencias para acelerar futuros builds
+
+    - name: Actualizar herramientas base de empaquetado
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install pip-tools
+
+    - name: Validar integridad e instalación reproducible (Hashes)
+      run: |
+        pip install --require-hashes -r requirements.txt
+
+    - name: Verificar simetría de dependencias
+      run: |
+        # Este paso asegura que requirements.txt sea un reflejo exacto de requirements.in.
+        # Si alguien olvidó compilar en local, el pipeline detectará la discrepancia.
+        pip-compile --generate-hashes requirements.in --dry-run
